@@ -1,0 +1,31 @@
+ul {
+    display: flex;
+    list-style-type: none;
+    gap: 8px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.body, .quote {
+    display: flex;
+    flex-direction: column;
+}
+
+.header, .banner, .signup, .copyright {
+    display: flex;
+}
+
+.list {
+    margin-left: auto;
+}
+
+.headerimage img {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 150px;
+}
