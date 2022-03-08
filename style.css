@@ -1,36 +1,128 @@
 ul {
     display: flex;
     list-style-type: none;
-    gap: 8px;
+    gap: 10px;
     padding: 0px;
 }
 
 a {
     text-decoration: none;
-    color: black;
 }
 
-.body, .quote {
+body, .quote {
     display: flex;
     flex-direction: column;
+    margin: 0px;
 }
 
-.header, .banner, .signup, .copyright {
+.header, .pagebody .signup, .copyright {
     display: flex;
+    flex-direction: column;
+    align-content: space-between;
 }
 
-.list {
+.header {
+    background-color: #1F2937;
+    justify-content: space-between;
+    margin-top: 0px;
+}
+
+.header, .pagebody, .quote, .signup, .copyright {
+    padding: 30px;
+}
+
+.headertop, .headerbottom {
+    display: flex;
+    margin: 20px;
+}
+
+.headertop ul {
     margin-left: auto;
+    align-items: center;
 }
 
-.headerimage img {
+.bannerleft {
+    font-size: 48px;
+    font-weight: 800;
+    color: #F9FAF8;
+    flex: 1 1 auto;
+    max-width: 100%;
+}
+
+.bannerleft p, .header ul a{
+    font-size: 18px;
+    color: #E5E7EB;
+    font-weight: normal;
+    margin: 0px;
+}
+
+.headertop img {
     display: flex;
     align-items: center;
-    height: 100px;
-    width: 150px;
+    flex: 0 1 auto;
+    max-height: 100px;
 }
 
 .bannerright img, .imagesandtexts img {
-    width: 300px;
-    height: 300px;
+    flex: 1 1 auto;
+    max-width: 100%;
+    max-height: 300px;
+}
+
+.firstbutton {
+    background-color: #3882F6;
+    color: white;
+}
+
+.pagebody p {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 800;
+    color: #1F2937;
+}
+
+.quote {
+    background-color: #E5E7EB;
+}
+
+.quotetext {
+    font-size: 36px;
+    color: #1F2937;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.quote p {
+    font-size: 24px;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    margin-left: auto;
+}
+
+.signup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    margin: 100px;
+    background-color: #3882F6;
+}
+
+.signupright {
+    margin-right: 100px;
+}
+
+.secondbutton {
+    background-color: #3882F6;
+    color: white;
+}
+
+.copyright {
+    text-align: center;
+    justify-content: center;
+    color: white;
+    background-color: #1F2937;
+    height: 50px;
 }
