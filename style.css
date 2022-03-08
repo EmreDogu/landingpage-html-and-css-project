@@ -29,3 +29,8 @@ a {
     height: 100px;
     width: 150px;
 }
+
+.bannerright img, .imagesandtexts img {
+    width: 300px;
+    height: 300px;
+}
